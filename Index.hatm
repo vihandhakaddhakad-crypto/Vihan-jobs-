@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VIHAN JOBS - Gujarat Job Portal</title>
+<style>
+body{margin:0;font-family:Arial;background:#f1f5f9;color:#172033}
+header{background:#102b5c;color:white;text-align:center;padding:25px 12px}
+header h1{margin:0;font-size:32px}
+header p{margin-bottom:0}
+.hero{background:#fff;padding:22px 15px;text-align:center}
+.hero h2{color:#d62828}
+.search{width:90%;padding:13px;border:1px solid #ccc;border-radius:8px;font-size:16px}
+.container{padding:15px;max-width:700px;margin:auto}
+.job{background:white;padding:17px;margin:15px 0;border-radius:12px;box-shadow:0 2px 8px #ddd}
+.job h3{color:#153e75;margin-top:0}
+.salary{font-size:21px;color:#13803d;font-weight:bold}
+.btn{display:block;background:#168447;color:white;text-align:center;padding:12px;border-radius:8px;text-decoration:none;margin-top:12px}
+footer{text-align:center;padding:20px;background:#102b5c;color:white}
+</style>
+</head>
+<body>
+<header>
+<h1>🇮🇳 VIHAN JOBS</h1>
+<p>ગુજરાત नहीं — गुजरात में नौकरी की सही जानकारी!</p>
+</header>
+<div class="hero">
+<h2>🔥 गुजरात में नौकरी का सुनहरा मौका 🔥</h2>
+<p>नई भर्तियाँ देखें और आवेदन करें</p>
+<input class="search" id="search" placeholder="कंपनी या लोकेशन खोजें..." oninput="filterJobs()">
+</div>
+<div class="container" id="jobs">
+<div class="job">
+<h3>Vee Gee Auto Components Pvt. Ltd.</h3>
+<p>📍 जालिसाना, अहमदाबाद, गुजरात</p>
+<p>🏭 काम: Production, Helper, Quality Checking, Machine Operator</p>
+<p class="salary">वेतन: ₹23,500 से ₹25,000 CTC</p>
+<p>⏰ ड्यूटी: 12 घंटे</p>
+<a class="btn" href="https://wa.me/916376421840?text=Namaste%2C%20mujhe%20Vee%20Gee%20job%20ki%20jankari%20chahiye">WhatsApp से आवेदन करें</a>
+</div>
+<div class="job">
+<h3>Jay Bharat Maruti Limited</h3>
+<p>📍 विठ्ठलापुर, अहमदाबाद, गुजरात</p>
+<p>🏭 काम: Production, Manufacturing, Helper</p>
+<p class="salary">वेतन: ₹23,000 से ₹25,000 CTC</p>
+<p>⏰ ड्यूटी: 12 घंटे</p>
+<a class="btn" href="https://wa.me/916376421840?text=Namaste%2C%20mujhe%20JBM%20job%20ki%20jankari%20chahiye">WhatsApp से आवेदन करें</a>
+</div>
+</div>
+<footer>
+<p>VIHAN JOBS | Gujarat Job Updates</p>
+<p>संपर्क: 6376421840</p>
+</footer>
+<script>
+function filterJobs(){
+let q=document.getElementById('search').value.toLowerCase();
+document.querySelectorAll('.job').forEach(j=>{
+j.style.display=j.innerText.toLowerCase().includes(q)?'block':'none';
+});
+}
+</script>
+</body>
+</html>
